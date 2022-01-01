@@ -1,0 +1,252 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */  
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: #0f0752;
+  color: white;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+}
+
+.logo img{
+  text-decoration: none;
+  width: 90px;
+  /* margin-top: -11px; */
+}
+
+.nav-links{
+  display: flex;
+  justify-content:flex-end;
+  list-style: none;
+  width: 75%;
+}
+.list{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 15px;
+}
+
+.list:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+/*=============== CSS FOR SMALL SCREEN ===================*/
+@media screen and (max-width: 850px) {
+  .logo{
+      display: flex;
+      position: absolute;
+      top: 15px;
+      left: 35px;
+  }
+
+  .logo img{
+    text-decoration: none;
+    width: 80px;
+    /* margin-top: -18px; */
+  }
+
+  .nav-links{
+      display: none;
+  }
+  .nav-links-mobile{
+      position: absolute;
+      display: block;
+      list-style: none;
+      background-color: #005496;
+      left: 0;
+      top: 100px;
+      transition: all 0.5 ease;
+      width: 100%;
+  }
+  .list{
+      color: white;
+      text-align: center;
+      padding: 32px;
+      width: 100%;
+      transition: all 0.5s ease;
+  }
+  .mobile-menu-icon{
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      color: white;
+      background-color: #0f0752;
+      border: none;
+      outline: none;
+      top: 15px;
+      right: 25px;
+  }
+}
+
+
+
+.about_container{
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.about_heading{
+  margin-left:70px;
+}
+
+@media (max-width: 768px) {
+  .about_heading{
+    margin-top:70px;
+  }
+}
+
+.about_content{
+  margin: 20px 20px 10px 70px;
+  color: grey;
+}
+
+
+.about_image{
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .about_image {
+    /* width:400px ;
+    height:auto; */
+    margin-top: 20px;
+  }
+}
+
+
+.carousel{
+  /* width:1300px; */
+  height: 750px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width:auto;
+    height:auto;
+  }
+}
+
+.home_divs{
+  background-color: white;
+  border: rgb(223, 215, 215) 2px;
+  border-style: solid;
+  padding: 50px 30px 50px 30px;
+  text-align: center;
+  /* margin-bottom: 60px; */
+  margin: 20px 20px 100px 20px;  
+}
+
+@media (max-width: 900px) {
+  .home_divs{
+    margin: auto;
+    padding: auto;
+  }
+}
+
+
+
+.home_divs:hover{
+  box-shadow: 0px 3px 4px 15px rgb(245, 245, 245);
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.home_divs:hover .icon-1{
+  color: #51a5f5;
+  background-color: rgb(248,248,255);
+  box-shadow: 1px 3px 3px 2px lightgray;
+  border-radius: 50px;
+}
+
+.home_divs_heading{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icon-1{
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 13px 17px 13px 17px;
+  background-color: #51a5f5;
+  color: white;
+}
+
+.service_div_web, .service_div_mobile{
+  background-color: #51a5f5;
+  color: white;
+  padding: 50px 30px 50px 30px;
+  text-align: center;
+  /* margin-bottom: 80px; */
+  margin-top: 100px;  
+}
+
+.service_div_graphic{
+  padding: 50px 30px 71px 30px;
+  text-align: center;
+  /* margin-bottom: 80px; */
+  margin-top: 100px; 
+  border: #51a5f5 1px;
+  border-style: solid;
+}
+
+@media (max-width: 768px) {
+  .service_div_web {
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+  }
+  .service_div_graphic{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .service_div_mobile{
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+.graphic_icon{
+  color: #51a5f5;
+  font-size: 35px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 13px 17px 13px 17px;
+}
+
+
+/* Footer Styling */
+.footer{
+  background-color: #0f0752;
+  color: white;
+}
+
+.footer-logo img{
+  width: 150px;
+  cursor: pointer;
+}
+.footer-link a{
+  text-decoration: none;
+  color: white;
+}
+.align-center{
+  text-align: center;
+}
